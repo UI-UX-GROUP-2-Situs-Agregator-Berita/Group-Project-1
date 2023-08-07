@@ -1,4 +1,26 @@
 /* Style CSS hanya untuk index.html */
-body{
-    padding-top: 100px;
+body {
+  padding-top: 150px;
+}
+
+/* .container .row{
+    display: flex;
+} */
+
+.row .lorem-1 {
+  background-color: #D9D9D9;
+}
+
+/* .row .lorem-1 h1 {
+  padding-top: 20px;
+} */
+
+.row .lorem-1 img {
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.row .lorem-1 .row{
+    display: flex;
 }
