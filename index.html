@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Landing Page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,33 +20,31 @@
   <body>
     <!-- Start Header -->
     <header>
-      <nav
-        class="navbar fixed-top navbar-expand-sm bg-primary navbar-light mb-2"
-      >
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light mb-2">
         <div class="container">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fa fa-fw fa-bars" style="color: #f47522"></i>MENU</a
-              >
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-bars" style="color: #f47522"></i>
+                MENU
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fa fa-fw fa-search" style="color: #f47522"></i
-                >SEARCH</a
-              >
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-search" style="color: #f47522"></i>
+                SEARCH
+              </a>
             </li>
           </ul>
-          <a class="navbar-brand" href="#">
-            <img
-              src="Assets/img/logo-ALTA.png"
-              alt="Avatar Logo"
-              class="img-responsive"
-            />
+          <a class="navbar-brand" href="index.html">
+            <img src="Assets/img/logo-ALTA.png" alt="Avatar Logo" class="img-responsive"/>
           </a>
-          <a href="home.html"
-            ><button type="button" class="btn btn-secondary">Login</button></a
-          >
+          <div class="btn-login">
+            <a href="home.html">
+              <button type="button" class="btn btn-secondary">Login</button>
+            </a>
+          </div>
+          
         </div>
       </nav>
     </header>
@@ -55,178 +54,347 @@
     <main>
       <!-- Start Container -->
       <div class="container">
+        <!-- Start Row -->
         <div class="row">
-          <!-- Start Headline -->
-          <div class="col-8">
+          <!-- Start news right -->
+          <div class="col-lg-8 col-md-12">
             <div class="lorem-1">
-              <div class="bg-primary text-white rounded">
+              <div class="text-black">
                 <h1>HEADLINE</h1>
-                <p>Lorem ipsum...</p>
               </div>
-              
-              <img src="Assets/img/headline.png" alt="headline" class="img-responsive"/>
-  
-              <div class="row d-flex align-item-end">
+
+              <a href="home.html">
+                <img src="Assets/img/headline.png" alt="headline" class="img-responsive"/></a>
+              <p>2 Jam Lalu</p>
+
+              <!-- <div class="row">
                 <div class="col-auto">
                   <h3>Politik</h3>
                 </div>
                 <div class="col-auto">
-                  <p>2 Jam Lalu</p>
+                  
                 </div>
-              </div>
+              </div> -->
               <h2>
-                KPK Dianggap Keliru karena Minta Maaf ke TNI dan Serahkan Kasus
-                Suap Kabasarnas ke Puspom
+                <a href="home.html"
+                  >KPK Dianggap Keliru karena Minta Maaf ke TNI dan Serahkan
+                  Kasus Suap Kabasarnas ke Puspom</a
+                >
               </h2>
               <p>
                 Kesuksesan Komisi Pemberantasan Korupsi (KPK) mengungkap praktik
                 dugaan korupsi di lingkungan Basarnas mendapat apresiasi dengan
-                menetapkan dua anggota TNI Eks Kepala Basarnas Marsekal Muda Henri
-                Alfiandi dan Letkol Adm ABC selaku Koordinator Staf Administrasi
-                sebagai tersangka.
+                menetapkan dua anggota TNI Eks Kepala Basarnas Marsekal Muda
+                Henri Alfiandi dan Letkol Adm ABC selaku Koordinator Staf
+                Administrasi sebagai tersangka.
               </p>
             </div>
+
             <!-- Start Carousel -->
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-              <!-- Indicators/dots -->
+            <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-              <!-- The slideshow/carousel -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
+                    <!-- Start Col -->
                     <div class="col-4">
+                      <!-- Start Card -->
+                      <a href="home.html">
+                        <div class="card">
+                          <img
+                            class="card-img-top"
+                            src="Assets/img/carousel-1.jpg"
+                            alt="Card image"
+                          />
+                          <div class="card-body">
+                            <p>
+                              Entaskan Kemiskinan, Ganjar Pranowo: Bantuan
+                              Langsung Kasih...
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                          </div>
+                        </div>
+                      </a>
+                      <!-- End Card -->
+                    </div>
+                    <!-- End Col -->
+                    <!-- Start Col -->
+                    <div class="col-4">
+                      <!-- Start Card -->
+                      <a href="home.html">
+                        <div class="card">
+                          <img
+                            class="card-img-top"
+                            src="Assets/img/carousel-2.jpg"
+                            alt="Card image"
+                          />
+                          <div class="card-body">
+                            <p>
+                              Kerispatih dan Sammy Simorangkir Gelar Konser
+                              Spesial...
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- End Card -->
+                    </div>
+                    <!-- End Col -->
+                    <!-- Start Col -->
+                    <div class="col-4">
+                      <!-- Start Card -->
                       <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image"/>
+                        <img
+                          class="card-img-top"
+                          src="Assets/img/carousel-2.jpg"
+                          alt="Card image"
+                        />
                         <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
+                          <p>
+                            <a href="home.html"
+                              >Kerispatih dan Sammy Simorangkir Gelar Konser
+                              Spesial..</a
+                            >
+                          </p>
                         </div>
                       </div>
+                      <!-- End Card -->
                     </div>
-                    <div class="col-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image"/>
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card col-4">
-                      <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image"/>
-                      <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                      </div>
-                    </div>
+                    <!-- End Col -->
                   </div>
-                  <!-- End row-4 -->
                 </div>
-                <!-- End Carousel item -->
-                <!-- Start Carousel item -->
+                <div class="carousel-item">
+                  <img src="Assets/img/minion.jpeg" class="d-block w-100" alt="..." />
+                </div>
                 <div class="carousel-item">
                   <div class="row">
+                    <!-- Start Col -->
                     <div class="col-4">
+                      <!-- Start Card -->
+                      <a href="home.html">
+                        <div class="card">
+                          <img
+                            class="card-img-top"
+                            src="Assets/img/carousel-1.jpg"
+                            alt="Card image"
+                          />
+                          <div class="card-body">
+                            <p>
+                              Entaskan Kemiskinan, Ganjar Pranowo: Bantuan
+                              Langsung Kasih...
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                          </div>
+                        </div>
+                      </a>
+                      <!-- End Card -->
+                    </div>
+                    <!-- End Col -->
+                    <!-- Start Col -->
+                    <div class="col-4">
+                      <!-- Start Card -->
+                      <a href="home.html">
+                        <div class="card">
+                          <img
+                            class="card-img-top"
+                            src="Assets/img/carousel-2.jpg"
+                            alt="Card image"
+                          />
+                          <div class="card-body">
+                            <p>
+                              Kerispatih dan Sammy Simorangkir Gelar Konser
+                              Spesial...
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- End Card -->
+                    </div>
+                    <!-- End Col -->
+                    <!-- Start Col -->
+                    <div class="col-4">
+                      <!-- Start Card -->
                       <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image"/>
+                        <img
+                          class="card-img-top"
+                          src="Assets/img/carousel-2.jpg"
+                          alt="Card image"
+                        />
                         <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
+                          <p>
+                            <a href="home.html"
+                              >Kerispatih dan Sammy Simorangkir Gelar Konser
+                              Spesial..</a
+                            >
+                          </p>
                         </div>
                       </div>
+                      <!-- End Card -->
                     </div>
-                    <div class="col-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image"/>
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Card -->
-                    <div class="col-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image"/>
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Card -->
-                  </div>
-                  <!-- End Row -->
-                </div>
-                <!-- End Carousel Item 2 -->
-                <!-- Start Carousel Item 3 -->
-                <div class="carousel-item">
-                  <div class="row">
-                    <!-- Start Card -->
-                    <div class="col-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Card -->
-                    <!-- Start Card -->
-                    <div class="col-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Card -->
-                    <!-- Start Card -->
-                    <div class="col-4">
-                      <div class="card">
-                        <img class="card-img-top" src="https://cdn-brilio-net.akamaized.net/news/2020/10/30/194679/1342943-meme-kelakuan-orang-indonesia.jpg" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">John Doe</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Card -->
+                    <!-- End Col -->
                   </div>
                 </div>
-                <!-- End Carousel Item 3 -->
-                
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo"data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
               </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
             <!-- End Carousel -->
+            <!-- Start Another News -->
+            <div class="another-news">
+              <hr/>
+              <div class="news-1">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="Assets/img/carousel-1.jpg"
+                      alt="card-2"
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-auto">
+                        <h3>Bola</h3>
+                      </div>
+                      <div class="col-auto">
+                        <p>2 Jam Lalu</p>
+                      </div>
+                    </div>
+                    <h2>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam, exercitationem!
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Numquam, possimus. Harum veritatis quis doloribus. Tenetur
+                      doloribus consequatur non asperiores quis?
+                    </p>
+                  </div>
+                </div>
+                <hr />
+              </div>
+              <!-- Start News 2 -->
+              <div class="news-2">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="Assets/img/carousel-1.jpg"
+                      alt="card-2"
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-auto">
+                        <h3>Bola</h3>
+                      </div>
+                      <div class="col-auto">
+                        <p>2 Jam Lalu</p>
+                      </div>
+                    </div>
+                    <h2>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam, exercitationem!
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Numquam, possimus. Harum veritatis quis doloribus. Tenetur
+                      doloribus consequatur non asperiores quis?
+                    </p>
+                  </div>
+                </div>
+                <hr/>
+              </div>
+              <!-- End News 2 -->
+              <!-- Start News 3 -->
+              <div class="news-3">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="Assets/img/carousel-1.jpg"
+                      alt="card-2"
+                      class="img-responsive"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-auto">
+                        <h3>Bola</h3>
+                      </div>
+                      <div class="col-auto">
+                        <p>2 Jam Lalu</p>
+                      </div>
+                    </div>
+                    <h2>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam, exercitationem!
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Numquam, possimus. Harum veritatis quis doloribus. Tenetur
+                      doloribus consequatur non asperiores quis?
+                    </p>
+                  </div>
+                </div>
+                <hr>
+              </div>
+              <!-- End News 3 -->
+            </div>
+            <!-- End Another News -->
+            <!-- Start Button Berita Lainnya -->
+            <div class="btn-brt-lainnya d-flex justify-content-center py-3">
+              <button>Berita Lainnya</button>
+            </div>
+            <!-- End Button Berita Lainnya -->
           </div>
-          
-          <!-- End Col 8 -->
+          <!-- End News Right -->
 
-          <div class="lorem-2 col-4">
+          <!-- Start Berita Pilihan -->
+          <div class="lorem-2 col-lg-4 col-md-12">
+            <div class="judul">
+              <h1><center>Berita Pilihan</center></h1>
+              <hr>
+            </div>
+            
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
               animi, nostrum cumque voluptate necessitatibus id atque eum
@@ -239,171 +407,27 @@
               esse impedit at dolores non perferendis quam! Iusto sint aut
               atque, perspiciatis explicabo deleniti nostrum, repellat esse
               minima sed assumenda perferendis, aperiam iste? Magni molestiae
-              eius eaque voluptate recusandae unde? Natus magnam, saepe qui id
-              ducimus dolore eligendi fuga quasi, obcaecati quod ipsa numquam
-              dicta error consequuntur adipisci ratione. Cum qui, nam omnis
-              veritatis enim magnam ipsum soluta iste tempora debitis quasi
-              voluptatem mollitia non nisi unde quae molestiae nesciunt dolor,
-              quisquam, nemo facilis eveniet. Excepturi aperiam fuga
-              reprehenderit architecto dicta cupiditate suscipit libero porro
-              quae a numquam ipsa temporibus blanditiis sint possimus quibusdam
-              aliquid alias provident veritatis mollitia, quos magni illo rerum
-              totam? Neque culpa quae incidunt molestias accusantium magnam
-              veniam blanditiis debitis suscipit recusandae aperiam quas cum,
-              corporis amet! Temporibus itaque accusamus a assumenda, quidem
-              consectetur dolorem, iste autem incidunt nam voluptate quas
-              doloremque laboriosam repudiandae! Illo quibusdam accusantium
-              suscipit, amet adipisci sapiente! Itaque quibusdam quisquam
-              voluptate, culpa hic, impedit cupiditate explicabo, aspernatur
-              consequuntur sapiente quos commodi earum esse quaerat! Sequi
-              voluptates voluptas accusantium, minus a cupiditate, ipsum
-              incidunt ut tenetur et laudantium assumenda voluptatum officiis ab
-              praesentium. Vel eum omnis ipsam. Sunt aliquam odio blanditiis
-              deserunt minus neque unde, voluptatem voluptatum earum nulla
-              nihil, dicta nam dignissimos a alias pariatur tempora sint! Nihil,
-              ullam eos dolorem ab porro aliquam atque, hic ipsa quibusdam, quam
-              doloribus aperiam nostrum. Nesciunt, magnam cupiditate laboriosam
-              corrupti porro obcaecati voluptas consectetur ipsa, alias
-              assumenda molestiae omnis deserunt?
+              eius eaque voluptate recusandae unde? Natus magnam, 
             </p>
           </div>
+          <!-- End Berita Pilihan -->
         </div>
-
-        <div class="lorem-3">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorem
-            ipsa, eaque totam minus similique molestiae assumenda officia at.
-            Qui dolorum suscipit beatae nesciunt molestiae porro earum, nisi
-            debitis mollitia consequuntur iusto reprehenderit minima, nemo sed
-            culpa minus facilis totam reiciendis iste? Laboriosam eligendi in
-            alias ad a! Voluptatum voluptate quasi sed, ullam minus porro
-            corporis ratione libero tenetur, nobis perspiciatis! Architecto ut
-            totam iure ad in nulla error voluptatem earum nihil quae eligendi
-            animi delectus minus sit doloremque blanditiis, nobis et quos at
-            modi facere. Dolore, ullam error fuga nemo, sunt molestiae doloribus
-            voluptates laboriosam eligendi nisi a incidunt amet nam,
-            exercitationem beatae? Similique totam dolorem earum fugiat ab
-            neque, nesciunt voluptatum atque eos. Qui ipsam cupiditate eveniet
-            alias, tempore voluptate fuga libero corporis, labore beatae ipsum
-            asperiores numquam! Modi error cumque sed dolor non, ipsa blanditiis
-            ea, culpa totam, ab saepe? Dicta fugit illo odit quia, debitis ex
-            consequuntur, animi rem facere delectus dolorum libero suscipit
-            similique aut. Quia doloremque voluptas placeat saepe incidunt atque
-            numquam expedita velit voluptate aspernatur delectus totam autem eos
-            ipsa, illum necessitatibus a blanditiis earum distinctio quod
-            doloribus ex! Numquam nam corrupti, officiis doloribus accusantium
-            quis architecto atque non omnis! Unde reiciendis ab minima deleniti
-            maiores suscipit voluptatem repellat aut, quibusdam eum porro et
-            eligendi velit quas earum doloremque, autem assumenda est iusto
-            laboriosam, libero a distinctio ad! Earum neque error amet laborum
-            corporis temporibus minima sit beatae tempore, obcaecati illo
-            ratione delectus, numquam quisquam iure omnis! Nostrum laborum, eos
-            praesentium vel ex a? Molestias ex, voluptate laborum facilis
-            dolorum voluptatem dolorem iusto quos doloribus temporibus veritatis
-            sint aliquid quasi. Odio magnam tempore hic officia nobis nemo, eos
-            magni debitis sint quis ipsum ipsam qui quos non nostrum ratione
-            eius blanditiis optio enim atque quod facilis ad labore? Aut nisi
-            possimus cumque facilis autem ad dignissimos sint nam voluptates
-            nostrum aliquid, nesciunt iusto deleniti alias impedit praesentium
-            molestias! Voluptatibus, molestiae? Repellendus nostrum repudiandae
-            eveniet saepe? Officia illum ipsa amet iusto cum neque veniam
-            eveniet? Eos mollitia, sequi quia corrupti alias quod temporibus
-            illum! Quibusdam nulla aliquid, ullam laborum recusandae eveniet
-            placeat dicta exercitationem minus eius doloremque eum accusamus,
-            nisi consequuntur asperiores, nemo omnis inventore dolorem voluptate
-            iste impedit hic? Perferendis at dicta obcaecati, adipisci quas
-            commodi itaque quos? Pariatur veniam suscipit natus doloribus
-            molestiae hic mollitia possimus repellat saepe quaerat, minus
-            laborum tempora omnis harum porro, placeat consequatur officiis
-            sint. Rerum doloribus architecto libero repellat pariatur, optio
-            laudantium recusandae tenetur debitis saepe exercitationem
-            accusantium porro officiis! Voluptatem non voluptate dolore ut ad
-            perspiciatis obcaecati sed saepe? Illum explicabo nulla labore, aut
-            harum, eius nesciunt sit, quam eos dolorem doloremque. Quidem
-            ducimus possimus atque facilis, quae, suscipit molestiae blanditiis,
-            doloremque quo saepe dicta cum totam aliquid consequuntur quaerat
-            animi sequi. Dicta, reiciendis? Molestiae facere aliquam dicta,
-            corrupti et exercitationem? Perspiciatis aut quasi explicabo
-            temporibus unde rem, possimus voluptate modi doloremque
-            reprehenderit beatae blanditiis molestiae expedita, perferendis
-            dolore aspernatur! Facere atque nihil animi accusantium cum? Minima
-            inventore vitae dolore, perspiciatis veritatis excepturi itaque id
-            nemo.
-          </p>
-        </div>
-        <div class="lorem-4">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            molestiae architecto eum ex qui dolore, quo officiis est nobis
-            obcaecati tempora delectus. Dignissimos voluptate exercitationem
-            laboriosam? Ea quae eos repudiandae iste explicabo rerum accusamus
-            cum quo aliquam, excepturi animi vel debitis quod unde, nesciunt
-            molestias veritatis? Sequi modi, tempora, perferendis praesentium
-            harum ex vel aspernatur eaque laboriosam corrupti ea iste ipsa ad
-            similique suscipit, quibusdam tempore molestiae ratione. Accusantium
-            aperiam ipsam, deserunt nam unde amet nulla explicabo placeat magni
-            nobis inventore voluptate consequuntur alias obcaecati harum nemo
-            illo, aliquam quas in officia corporis, quaerat corrupti
-            exercitationem! Facilis accusamus delectus quaerat sed ad. Quaerat,
-            ad soluta eveniet veniam cumque beatae delectus eius atque,
-            architecto repudiandae reprehenderit enim! Deleniti, quae. Maxime,
-            quisquam consectetur ad temporibus quia aliquam voluptate iure
-            excepturi harum pariatur ab laudantium nam illo maiores quibusdam.
-            Similique aspernatur sed minima, rerum cum alias incidunt atque
-            voluptates veritatis, rem nostrum magnam harum, accusantium
-            sapiente. Aliquam omnis expedita amet distinctio porro rerum, fugit
-            reiciendis consequuntur reprehenderit doloremque sint id. Tempore
-            cum, sapiente iure similique sunt provident pariatur dignissimos,
-            officiis voluptates consequuntur incidunt dolor perspiciatis autem
-            placeat. Fuga alias quas consectetur quo optio veniam quae
-            laudantium iusto ullam doloribus eligendi natus, iste delectus ad
-            culpa explicabo error velit placeat at omnis. Nobis quam iste velit,
-            delectus nam optio! Quasi reiciendis laudantium repudiandae optio
-            culpa iusto itaque pariatur natus voluptatem? Consequuntur
-            recusandae explicabo, tempore nesciunt natus iste repellat rerum
-            fuga autem doloremque quisquam fugiat eligendi veniam nostrum?
-            Doloremque placeat quidem sit dicta. Optio vel nisi, maiores animi
-            omnis rerum eaque provident libero dolorem debitis, architecto
-            nihil, eveniet atque facere unde quaerat mollitia ullam! Enim,
-            tenetur? Amet eligendi repellendus error ipsa ipsam officia,
-            consequuntur tempore saepe sapiente quos necessitatibus cumque
-            consectetur. Fugiat, labore porro nostrum dolore itaque debitis
-            natus temporibus adipisci quis tempore dolor placeat qui quisquam
-            voluptatem dicta esse cupiditate laborum iure quidem eaque nulla?
-            Voluptatem, expedita quam? Hic, facere. Repellendus numquam
-            quibusdam repellat, quis obcaecati, quasi vel sed hic natus
-            laudantium, quidem qui nemo ex eaque incidunt magnam ab ea
-            praesentium officiis repudiandae ad laboriosam deleniti eveniet
-            fugiat! Labore ipsam obcaecati explicabo ut impedit hic
-            exercitationem deleniti suscipit quidem, cumque voluptatibus
-            distinctio molestias illo ad mollitia esse temporibus quibusdam,
-            odit deserunt eaque sunt accusamus minus libero harum. Iste
-            consectetur dolorum culpa aperiam commodi totam ratione eveniet
-            beatae non, facilis tenetur modi ipsam molestiae, animi
-            necessitatibus nisi hic officiis! Voluptatem facilis quis recusandae
-            nam impedit iure inventore eligendi reprehenderit animi labore
-            voluptates autem provident ratione, eos, nemo libero cupiditate,
-            consectetur non ea dolore officiis. Maiores alias eaque, expedita
-            eveniet inventore consequuntur possimus reiciendis, corporis velit
-            vitae necessitatibus. Rem maxime, quidem possimus necessitatibus
-            libero, harum numquam tempore tenetur vero quia quibusdam voluptatum
-            sed corrupti eligendi fuga? Hic velit voluptate quasi itaque fugit
-            quod vel voluptatibus architecto tempora consectetur quas quidem
-            labore adipisci deserunt possimus, eum illo a repudiandae similique
-            reprehenderit rem quae dignissimos odio odit! Quasi, omnis non quas
-            provident quo velit, voluptates magni illo corrupti quidem in magnam
-            ab praesentium nesciunt excepturi! Id, quam?
-          </p>
-        </div>
+        <!-- End Row -->
       </div>
+      <!-- End Container -->
     </main>
     <!-- End Main -->
 
-    <h1>Hello, world!</h1>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Start Footer -->
+    <footer class="text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
