@@ -1,0 +1,18 @@
+/* Style CSS hanya untuk index.html */
+body {
+  padding-top: 150px;
+}
+
+header nav {
+  /* background-color: #d9d9d9; */
+  background-color: aqua;
+}
+
+.btn-login button{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    color: orange;
+    border: 2px solid blue;
+  }

@@ -106,7 +106,15 @@ footer {
 }
 
 footer .kotak-1{
-  width: 100px;
-  height: 100px;
-  background-color: #dac52c;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  /* border: 1px solid; */
+  /* background-color: #dac52c; */
+}
+
+
+.footer-social-media{
+  display: flex;
+  justify-content: center;
 }
