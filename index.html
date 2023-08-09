@@ -4,17 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Landing Page</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
     <link rel="stylesheet" href="Assets/css/style.css" />
   </head>
   <body>
@@ -115,7 +108,7 @@
                 <div class="carousel-item active">
                   <div class="row">
                     <!-- Start Col -->
-                    <div class="col-4">
+                    <div class="col-lg-4">
                       <!-- Start Card -->
                       <a href="home.html">
                         <div class="card">
@@ -137,7 +130,7 @@
                     </div>
                     <!-- End Col -->
                     <!-- Start Col -->
-                    <div class="col-4">
+                    <div class="col-lg-4">
                       <!-- Start Card -->
                       <a href="home.html">
                         <div class="card">
@@ -158,7 +151,7 @@
                     </div>
                     <!-- End Col -->
                     <!-- Start Col -->
-                    <div class="col-4">
+                    <div class="col-lg-4">
                       <!-- Start Card -->
                       <div class="card">
                         <img
@@ -381,7 +374,7 @@
             </div>
             <!-- End Another News -->
             <!-- Start Button Berita Lainnya -->
-            <div class="btn-brt-lainnya d-flex justify-content-center py-3">
+            <div class="btn-brt-lainnya">
               <button>Berita Lainnya</button>
             </div>
             <!-- End Button Berita Lainnya -->
@@ -393,6 +386,41 @@
             <div class="judul">
               <h1><center>Berita Pilihan</center></h1>
               <hr>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#berita-1">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Link</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="berita-1" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div id="menu1" class="container tab-pane fade"><br>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="lingkaran-1">
+                      <p>1</p>
+                    </div>
+                  </div>
+                  <div class="col-9">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+                
+              </div>
+              <div id="menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
             </div>
             
             <p>
@@ -421,11 +449,37 @@
     <!-- Start Footer -->
     <footer class="text-center text-lg-start">
       <!-- Copyright -->
-      <div class="text-center p-3">
-        © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="kotak-1">
+              <p>aa</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kotak-1">
+              <p>aa</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-logo d-flex justify-content-center">
+              <img src="Assets/img/logo-ALTA.png" alt="logo-ALTA" class="img-responsive">
+            </div>
+            <p class="text-black text-center">Ikuti Kami Di</p>
+            <div class="footer-social-media">
+              <div class="row">
+                <div class="col-3">
+                  <i class="fa fa-fw fa-instagram fa-2x"></i>
+                </div>
+                <div class="col-3">
+                  <img src="Assets/img/ic_fb.png" alt="footer-sosmed-fb">
+                </div>
+              </div>
+            </div>
+            <p></p>
+          </div>
+        </div>
       </div>
-      <!-- Copyright -->
     </footer>
     <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

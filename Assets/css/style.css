@@ -54,6 +54,15 @@ header .navbar {
   padding: 10px;
 }
 
+.lingkaran-1{
+  display: flex;
+  align-items: center;
+	width: 50px;
+	height: 50px;
+	background: #dac52c;
+	/* border-radius: 100%; */
+}
+
 .carousel-control-prev, .carousel-control-next{
   background-color: aqua;
 }
@@ -75,17 +84,29 @@ header .navbar {
   text-align: center;
 }
 
+.btn-brt-lainnya{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .btn-brt-lainnya button{
   border: 2px solid blue;
   border-radius: 30px;
   width: 280px;
   height: 50px;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: blue;
 }
 
 footer {
   padding: 2rem;
   color: white;
   background-color: #d9d9d9;
+}
+
+footer .kotak-1{
+  width: 100px;
+  height: 100px;
+  background-color: #dac52c;
 }
