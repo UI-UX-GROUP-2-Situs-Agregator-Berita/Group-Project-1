@@ -8,11 +8,44 @@ header nav {
   background-color: aqua;
 }
 
-.btn-login button{
-    width: 100px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: white;
-    color: orange;
-    border: 2px solid blue;
-  }
+.btn-login button {
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  color: orange;
+  border: 2px solid blue;
+}
+
+.header-berita {
+  background-color: yellow;
+  width: 100%;
+}
+
+.header-berita .breadcrumb {
+  font-size: 24px;
+}
+
+.header-berita .breadcrumb a {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.header-berita .breadcrumb .active {
+  color: #f47522;
+}
+
+.header-berita .judul-berita h1 {
+  font-size: 50px;
+}
+
+.nama-pengarang{
+  /* height: 10px; */
+  background-color: aqua;
+}
+
+#nama-penerbit img{
+  width: 101px;
+  height: 102px;
+  border-radius: 50%;
+}
