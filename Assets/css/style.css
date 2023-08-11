@@ -1,120 +1,133 @@
 /* Style CSS hanya untuk index.html */
-body {
-  padding-top: 150px;
-}
 
-header .navbar {
-  background-color: #d9d9d9;
-}
+@media (min-width: 768px) {
+  body {
+    padding-top: 150px;
+  }
 
-.btn-login button{
-  width: 100px;
-  height: 50px;
-  border-radius: 30px;
-  background-color: white;
-  color: orange;
-  border: 2px solid blue;
-}
+  header .navbar {
+    background-color: #d9d9d9;
+  }
 
-/* .container .row{
+  .btn-login button {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    color: orange;
+    border: 2px solid blue;
+  }
+
+  .navbar .nav-item a{
+    color: blue;
+  }
+
+  /* .container .row{
+      display: flex;
+  } */
+
+  .custom-container {
+    margin-left: 243px;
+    margin-right: 243px;
+    max-width: 954px;
+  }
+
+  .row .lorem-1 {
+    background-color: #d9d9d9;
+    padding: 25px;
+    /* margin: 10px; */
+  }
+
+  .row .lorem-1 h1 {
+    border: 1px;
+  }
+
+  .row .lorem-1 img {
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .row .lorem-1 .row {
     display: flex;
-} */
+  }
 
-.row .lorem-1 {
-  background-color: #d9d9d9;
-  padding: 25px;
-  /* margin: 10px; */
-}
+  .lorem-1 .row p {
+    align-items: baseline;
+  }
 
-.row .lorem-1 h1 {
-  border: 1px;
-}
+  /* .lorem-1 .bg-primary{
+    background-color: #D9D9D9;
+  } */
 
-.row .lorem-1 img {
-  padding-bottom: 20px;
-  width: 100%;
-  height: auto;
-}
+  .carousel {
+    border: 2px solid;
+    margin: 5px;
+    padding: 10px;
+  }
 
-.row .lorem-1 .row{
-  display: flex;
-}
+  .lingkaran-1 {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #dac52c;
+    /* border-radius: 100%; */
+  }
 
-.lorem-1 .row p{
-  align-items: baseline;
-}
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: aqua;
+  }
 
-/* .lorem-1 .bg-primary{
-  background-color: #D9D9D9;
-} */
+  .row .card a {
+    text-decoration: none;
+    font-weight: bolder;
+  }
 
-.carousel{
-  border: 2px solid;
-  margin: 5px;
-  padding: 10px;
-}
+  .row .col-8 button {
+    justify-content: center;
+  }
 
-.lingkaran-1{
-  display: flex;
-  align-items: center;
-	width: 50px;
-	height: 50px;
-	background: #dac52c;
-	/* border-radius: 100%; */
-}
+  .container .row .lorem-2 {
+    border: 2px solid;
+  }
 
-.carousel-control-prev, .carousel-control-next{
-  background-color: aqua;
-}
+  .container .lorem2 .judul h1 {
+    text-align: center;
+  }
 
-.row .card a{
-  text-decoration: none;
-  font-weight: bolder;
-}
+  .btn-brt-lainnya {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
 
-.row .col-8 button{
-  justify-content: center;
-}
+  .btn-brt-lainnya button {
+    border: 2px solid blue;
+    border-radius: 30px;
+    width: 280px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+  }
 
-.container .row .lorem-2 {
-  border: 2px solid;
-}
+  footer {
+    padding: 2rem;
+    color: white;
+    background-color: #d9d9d9;
+  }
 
-.container .lorem2 .judul h1{
-  text-align: center;
-}
+  footer .kotak-1 {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    /* border: 1px solid; */
+    /* background-color: #dac52c; */
+  }
 
-.btn-brt-lainnya{
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.btn-brt-lainnya button{
-  border: 2px solid blue;
-  border-radius: 30px;
-  width: 280px;
-  height: 50px;
-  color: white;
-  background-color: blue;
-}
-
-footer {
-  padding: 2rem;
-  color: white;
-  background-color: #d9d9d9;
-}
-
-footer .kotak-1{
-  color: black;
-  font-size: 12px;
-  font-weight: bold;
-  /* border: 1px solid; */
-  /* background-color: #dac52c; */
-}
-
-
-.footer-social-media{
-  display: flex;
-  justify-content: center;
+  .footer-social-media {
+    display: flex;
+    justify-content: center;
+  }
 }
